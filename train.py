@@ -3,7 +3,6 @@ from tokenizers import Tokenizer
 from tokenizers.models import WordPiece, BPE
 from tokenizers.implementations import SentencePieceBPETokenizer
 from glob import glob
-from transformers import PreTrainedTokenizerFast
 
 """
 # WHEN USING
