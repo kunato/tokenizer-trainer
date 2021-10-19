@@ -3,8 +3,17 @@ from tokenizers import Tokenizer
 from tokenizers.models import WordPiece, BPE
 from tokenizers.implementations import SentencePieceBPETokenizer
 from glob import glob
+from transformers import PreTrainedTokenizerFast
 
+"""
+# WHEN USING
 
+from transformers import PreTrainedTokenizerFast
+
+transformer_tokenizer = PreTrainedTokenizerFast(
+    tokenizer_object=tokenizer
+)
+"""
 def main(tokenizer_type='sentencepiece_bpe', vocab_size=9000):
     files = glob('*.txt')
     print('tokenize', files)
